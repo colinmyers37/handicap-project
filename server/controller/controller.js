@@ -10,4 +10,10 @@ module.exports = {
     getJs: (req, res) => {
         res.sendFile(path.join(__dirname, '../../client/main.js'));
     },
+    getCalculator: (req, res) => {
+        res.sendFile(path.join(__dirname, '../../client/calculator.html'));
+    },
+    getRating: (req, res) => {
+        res.sendFile(path.join(__dirname, '../../client/rating.html'));
+    },
 }
