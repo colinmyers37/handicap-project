@@ -16,4 +16,10 @@ module.exports = {
     getRating: (req, res) => {
         res.sendFile(path.join(__dirname, '../../client/rating.html'));
     },
+    getCalculatorJs: (req, res) => {
+        res.sendFile(path.join(__dirname, '../../client/calculator.js'));
+    },
+    getRatingJs: (req, res) => {
+        res.sendFile(path.join(__dirname, '../../client/rating.js'));
+    },
 }
