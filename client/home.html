@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sora:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sora:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css" />
     <title>Handicap Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/"><h2 class="website-name">HANDI</h2></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="/"><h2 class="website-name">HANDI</h2></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Calculator">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Rating">Rating</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="homepage-top">
+        <h3 class="homepage-title">Handicap</h3>
+      </div>
+      <div class="homepage-content">
+        <div class="handicap-picture"></div>
+        <h3 class="even-text">What is Handicap?</h3>
+        <p class="homepage-p">
+          If you are new to golf calculating your handicap is a important part
+          of the game. Golf handicap is a number that represents a golfer's
+          ability based on their previous golf rounds. It also can be used to
+          compare your golf game to your peers. Knowing your handicap is
+          important if you are looking to participate in a lot of different
+          tournament-style formats where your handicap might even the playing
+          field. Many tournaments format their play so that a players handicap
+          is used to score a round. This increases competition and allows
+          players who may not be the strongest golfers a chance to taste
+          victory. But this leads us to a few important questions. What is your
+          handicap, and more importantly, how do you calculate it?
+        </p>
+
+        <button class="btn btn-outline-dark homepage-btn" id="handicap-button">
+          Calculate Handicap
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Calculator">Calculator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Rating">Rating</a>
-            </li>
-           
-          </ul>
-        </div>
-      </nav>
-<main>
-<div class="homepage-top">
-    <h3 class="homepage-title">What is Handicap?</h3>
-</div>
-<div class="homepage-content">
-<img class="handicap-pic" src="images/handicap.jpeg" alt="Golf Handicap Writing">
-<h3>Even the Playing Field</h3>
-<p class="homepage-p">If you are new to golf calculating your handicap is a important part of the game. Golf handicap is a number that represents a golfer's ability based on their previous golf rounds. It also can be used to compare your golf game to your peers. Knowing your handicap is important if you are looking to participate in a lot of different tournament-style formats where your handicap might even the playing field. Many tournaments format their play so that a players handicap is used to score a round. This increases competition and allows players who may not be the strongest golfers a chance to taste victory. But this leads us to a few important questions. What is your handicap, and more importantly, how do you calculate it? 
-</p>
+      </div>
+    </main>
 
-<button class="btn btn-secondary" id="handicap-button">
-    calculate handicap
-</button>
-
-</div>
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js"></script>
-</body>
+  </body>
 </html>
