@@ -1,0 +1,16 @@
+body {
+    font-family:'Poppins', sans-serif;
+}
+.navbar {
+    box-shadow: 1px 3px 1px red ;
+}
+
+
+.website-name {
+    font-weight: 600;
+    color: navy;
+}
+
+.nav-link {
+    margin-left: 70px;
+}
