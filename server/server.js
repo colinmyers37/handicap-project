@@ -16,7 +16,7 @@ app.get('/css', getCss);
 app.get('/js', getJs);
 app.get('/calculator', getCalculator);
 app.get('/rating', getRating);
-app.get('calculatorJs', getCalculatorJs);
+app.get('/calculatorJs', getCalculatorJs);
 app.get('/ratingJs', getRatingJs);
 
 

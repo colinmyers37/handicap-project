@@ -6,6 +6,8 @@ let par = document.querySelector('#par').value;
 let form = document.querySelector('.calculator-form');
 
 
+console.log("hello world")
+
 form.addEventListener('submit', function(event){
     event.preventDefault();
     console.log(handicapIndex)
