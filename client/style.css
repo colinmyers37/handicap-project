@@ -60,3 +60,15 @@ align-items: center;
     height: 60px;
     width: 200px;
 }
+.calculator-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-box {
+    width:80vw;
+    height: 70vh;
+    background-color: rgb(227, 227, 227);
+    border-radius: 30px;
+}
