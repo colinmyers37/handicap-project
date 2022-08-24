@@ -81,3 +81,15 @@ align-items: center;
     height: 90px;
     width: auto;
 }
+.calculator-form {
+    margin-top: 30px;
+}
+.calculator-inputs {
+    width: auto;
+    height: 50px;
+}
+.calculator-btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+}
