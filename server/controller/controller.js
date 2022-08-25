@@ -26,7 +26,11 @@ module.exports = {
         const { courseRating, slopeRating, par} = req.body;
         let handicap = (par - courseRating) * 113 / slopeRating;
         handicap = Math.round(handicap);
+        if(handicap < 0) {
+            handicap = 0;
+        }
         handicap += '';
+        console.log(handicap);
         res.status(200).send(handicap);
     },
 }

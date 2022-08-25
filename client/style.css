@@ -72,7 +72,7 @@ align-items: center;
 
     align-items: center;
     width:80vw;
-    height: 70vh;
+    height: 35vh;
     background-color: rgb(227, 227, 227);
     border-radius: 30px;
 }
@@ -92,4 +92,11 @@ align-items: center;
     height: 50px;
     width: 200px;
     border-radius: 50px;
+}
+.answer-card {
+    margin-top: 24px;
+}
+.returned-text {
+
+    color: black;
 }

@@ -1,5 +1,5 @@
 const form = document.querySelector(".calculator-form");
-
+const answerCard = document.querySelector(".answer-card");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -14,8 +14,20 @@ form.addEventListener("submit", function (event) {
     par,
   };
   axios.post("/api/calculator", golfObj).then( (res) => {
-console.log("this is working")
+    console.log(res.data)
+  createCard(res.data)
   }).catch( (err) => {
     console.log(err)
   });
 });
+
+function createCard(handicap) {
+  const card = document.createElement('div');
+  console.log(handicap);
+  card.classList.add('returned-card');
+
+  card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4>`
+
+
+  answerCard.appendChild(card);
+}
