@@ -1,9 +1,21 @@
-let form = document.querySelector(".calculator-form");
+const form = document.querySelector(".calculator-form");
+
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  let handicapIndex = document.querySelector("#handicap-index").value;
-  let courseRating = document.querySelector("#course-rating").value;
-  let slopeRating = document.querySelector("#slope-rating").value;
-  let par = document.querySelector("#par").value;
+
+  const courseRating = document.querySelector("#course-rating").value;
+  const slopeRating = document.querySelector("#slope-rating").value;
+  const par = document.querySelector("#par").value;
+
+  const golfObj = {
+    courseRating,
+    slopeRating,
+    par,
+  };
+  axios.post("/api/calculator", golfObj).then( (res) => {
+console.log("this is working")
+  }).catch( (err) => {
+    console.log(err)
+  });
 });

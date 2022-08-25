@@ -8,7 +8,7 @@ app.use(express.static('client'));
 
 const port = process.env.PORT || 4000;
 
-const { getHomePage, getCss, getJs, getCalculator, getRating, getRatingJs, getCalculatorJs } = require('./controller/controller');
+const { getHomePage, getCss, getJs, getCalculator, getRating, getRatingJs, getCalculatorJs, getHandicap } = require('./controller/controller');
 
 
 app.get('/', getHomePage);
@@ -20,7 +20,7 @@ app.get('/calculatorJs', getCalculatorJs);
 app.get('/ratingJs', getRatingJs);
 
 
-
+app.post('/api/calculator' , getHandicap)
 
 
 

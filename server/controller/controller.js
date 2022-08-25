@@ -22,4 +22,11 @@ module.exports = {
     getRatingJs: (req, res) => {
         res.sendFile(path.join(__dirname, '../../client/rating.js'));
     },
+    getHandicap: (req, res) => {
+        const { courseRating, slopeRating, par} = req.body;
+        let handicap = (par - courseRating) * 113 / slopeRating;
+        handicap = Math.round(handicap);
+        handicap += '';
+        res.status(200).send(handicap);
+    },
 }
