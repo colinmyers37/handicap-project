@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sora:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css">
+    <link rel="stylesheet" href="/ratingCss">
     <title>Handicap Calculator</title>
 </head>
 <body>
@@ -32,13 +32,40 @@
           </ul>
         </div>
       </nav>
-<main>
-<h3 >Rating</h3>
-
-
-
-</main>
-
+      <main>
+        <form>
+          <input type="text" id="title" placeholder="What is the name of the golfcourse?" />
+          <input type="text" id="img" placeholder="Paste an image URL" />
+          <section id="ratings-container">
+            <p>Rate the golfcourse:</p>
+            <div id="radio-container">
+              <label for="one">
+                <input type="radio" name="ratings" value="1" id="one" />
+                1
+              </label>
+              <label for="two">
+                <input type="radio" name="ratings" value="2" id="two" />
+                2
+              </label>
+              <label for="three">
+                <input type="radio" name="ratings" value="3" id="three" />
+                3
+              </label>
+              <label for="four">
+                <input type="radio" name="ratings" value="4" id="four" />
+                4
+              </label>
+              <label for="five">
+                <input type="radio" name="ratings" value="5" id="five" />
+                5
+              </label>
+            </div>
+          </section>
+          <button>add</button>
+        </form>
+  
+        <section id="golfcourse-container"></section>
+      </main>
 
 
 

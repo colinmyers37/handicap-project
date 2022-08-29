@@ -22,6 +22,9 @@ module.exports = {
     getRatingJs: (req, res) => {
         res.sendFile(path.join(__dirname, '../../client/rating.js'));
     },
+    getRatingCss: (req, res) => {
+        res.sendFile(path.join(__dirname, '../../client/rating.css'));
+    },
     getHandicap: (req, res) => {
         const { courseRating, slopeRating, par} = req.body;
         let handicap = (par - courseRating) * 113 / slopeRating;
