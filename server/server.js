@@ -9,7 +9,7 @@ app.use(express.static('client'));
 
 const port = process.env.PORT || 4000;
 
-const { getHomePage, getCss, getJs, getCalculator, getRating, getRatingJs, getCalculatorJs, getHandicap, getRatingCss, getAll  } = require('./controller/controller');
+const { getHomePage, getCss, getJs, getCalculator, getRating, getRatingJs, getCalculatorJs, getHandicap, getRatingCss, getAll, createGolfcourse, deleteGolfcourse, updateGolfcourse  } = require('./controller/controller');
 
 
 app.get('/', getHomePage);
@@ -26,9 +26,9 @@ app.post('/api/calculator' , getHandicap)
 
 
 app.get('/api/golfcourses', getAll);
-// app.post("/api/golfcourses", createGolfcourse);
-// app.delete("/api/golfcourses/:id", deleteGolfcourse);
-//  app.put("/api/golfcourses/:id", updateGolfcourse);
+app.post("/api/golfcourses", createGolfcourse);
+app.delete("/api/golfcourses/:id", deleteGolfcourse);
+ app.put("/api/golfcourses/:id", updateGolfcourse);
 
 
 app.listen(port,console.log(`server is running on port ${port}`));

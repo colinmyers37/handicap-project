@@ -32,6 +32,8 @@ body {
     margin-top: 12px;
   }
   main {
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,13 +81,12 @@ body {
     align-items: center;
   }
   
-  #golfcourse-container {
-    background-color: red;
-    width: 500px;
-    height: auto;
+  #golfcourses-container {
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto;
-
+    justify-content: space-evenly;
   }
   
   .golfcourse-cover {
@@ -97,7 +98,7 @@ body {
   
   .golfcourse-card {
     background-color: rgb(227, 227, 227);
-    width: 200px;
+    width: 375px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -126,5 +127,6 @@ body {
   }
   
   .btns-container > button {
+    background-color: #212529;
     width: 20px;
   }

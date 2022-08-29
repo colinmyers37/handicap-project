@@ -43,7 +43,7 @@ function createGolfcourseCard(golfcourse) {
     <p class="golfcourse-rating">${golfcourse.rating} stars</p>
     <button onclick="updateGolfcourse(${golfcourse.id}, 'plus')">+</button>
     </div>
-    <button onclick="deleteGolfcourse(${golfcourse.id})">delete</button>
+    <button class="btn btn-dark" onclick="deleteGolfcourse(${golfcourse.id})">delete</button>
     `
     
     
