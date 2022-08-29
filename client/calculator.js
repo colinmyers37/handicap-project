@@ -23,11 +23,12 @@ form.addEventListener("submit", function (event) {
 
 function createCard(handicap) {
   const card = document.createElement('div');
-  console.log(handicap);
+  //console.log(handicap);
   card.classList.add('returned-card');
 
   card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4>`
-
-
+let handicapOutput = document.querySelectorAll('.returned-card')
+if (handicapOutput.length < 1) {
   answerCard.appendChild(card);
+}
 }

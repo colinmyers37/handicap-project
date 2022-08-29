@@ -75,6 +75,7 @@ align-items: center;
     height: 35vh;
     background-color: rgb(227, 227, 227);
     border-radius: 30px;
+outline: 4px solid black ;
 }
 .golfball-pic {
     margin: 20px;
