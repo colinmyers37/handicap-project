@@ -1,103 +1,124 @@
 body {
-    font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .navbar {
-    box-shadow: 1px 3px 1px rgb(206, 3, 3) ;
+  box-shadow: 1px 3px 1px rgb(206, 3, 3);
 }
 
-
 .website-name {
-    font-weight: 600;
-    color: black;
+  font-weight: 600;
+  color: black;
 }
 
 .nav-link {
-    font-size: 1.1rem;
-    margin-left: 100px;
+  font-size: 1.1rem;
+  margin-left: 100px;
 }
 
 .homepage-top {
-display: flex;
-justify-content: center;
-align-items: center;
-    width: 100vw;
-    height: 12vh;
-
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 12vh;
 }
 .homepage-title {
-    font-weight: 200;
-    font-size: 2.5rem;
+  font-weight: 200;
+  font-size: 2.5rem;
 }
 
 .even-text {
-    font-weight: 200;
-    margin-top: 12px;
+  font-weight: 200;
+  margin-top: 12px;
 }
 
 .homepage-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .homepage-p {
-    font-size: 1.1rem;
-    margin-left: 150px;
-    margin-right: 150px;
+  font-size: 1.1rem;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .handicap-picture {
-    width: 90vw;
-    height: 40vh;
-    background-image: url(./images/GettyImages-1294043488.jpeg);
-    background-size: cover;
-    background-position: center;
-    
+  width: 90vw;
+  height: 40vh;
+  background-image: url(./images/GettyImages-1294043488.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .homepage-btn {
-    height: 60px;
-    width: 200px;
+  height: 60px;
+  width: 200px;
 }
 .calculator-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .calculator-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    width:80vw;
-    height: 35vh;
-    background-color: rgb(227, 227, 227);
-    border-radius: 30px;
-outline: 4px solid black ;
+  align-items: center;
+  width: 80vw;
+  height: 35vh;
+  background-color: rgb(227, 227, 227);
+  border-radius: 30px;
+  outline: 4px solid black;
 }
 .golfball-pic {
-    margin: 20px;
-    height: 90px;
-    width: auto;
+  margin: 20px;
+  height: 90px;
+  width: auto;
 }
 .calculator-form {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .calculator-inputs {
-    width: auto;
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
 .calculator-btn {
-    height: 50px;
-    width: 200px;
-    border-radius: 50px;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
 }
 .answer-card {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 .returned-text {
+  color: black;
+}
+.under-calculator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    color: black;
+  margin-top: 20px;
+  height: 43vh;
+  width: 80vw;
+}
+.under-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ text-align: center;
+
+  width: 50vw;
+  height: 40vh;
+  margin: 20px;
+}
+.under-header {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.under-text {
+    font-size: 25px;
+    font-weight: 200;
 }

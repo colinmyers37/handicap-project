@@ -1,85 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sora:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Sora:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css" />
     <title>Handicap Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/"><h2 class="website-name">Handicap Calculator</h2></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/Calculator">Calculator <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Rating">Rating</a>
-            </li>
-           
-          </ul>
+      <a class="navbar-brand" href="/"
+        ><h2 class="website-name">Handicap Calculator</h2></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/Calculator"
+              >Calculator <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Rating">Rating</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="homepage-top">
+        <h3 class="homepage-title">Course Handicap Calculator</h3>
+      </div>
+      <div class="calculator-content">
+        <div class="calculator-box">
+          <img
+            src="./images/golfball.png"
+            alt="golfball image"
+            class="golfball-pic"
+          />
+          <p>
+            If you need to look up the course rating or slope rating of the
+            course you played click
+            <a href="https://ncrdb.usga.org/" target="_blank">here</a>
+          </p>
+          <form class="calculator-form">
+            <input
+              type="text"
+              placeholder="Course Rating"
+              class="calculator-inputs"
+              id="course-rating"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Slope Rating"
+              class="calculator-inputs"
+              id="slope-rating"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Score"
+              class="calculator-inputs"
+              id="par"
+              required
+            />
+            <button type="submit" class="btn btn-danger calculator-btn">
+              Calculate
+            </button>
+          </form>
+          <div class="answer-card"></div>
         </div>
-      </nav>
-<main>
-<div class="homepage-top">
-<h3 class="homepage-title">Course Handicap Calculator</h3>
-</div>
-<div class="calculator-content">
-<div class="calculator-box">
-<img src="./images/golfball.png" alt="golfball image" class="golfball-pic">
-<p>If you need to look up the course rating or slope rating of the course you played click <a href="https://ncrdb.usga.org/" target="_blank">here</a></p>
-<form class="calculator-form">
+        <div class="under-calculator">
+          <div class="under-content">
+            <h4 class="under-header">Nine Hole Calculation</h4>
+            <p class="under-text"> To get your 9 whole handicap score just divide the course rating by two and put enter that as your course rating. This is common due to not always having the time to play a full 18 holes. If this is the case for you enter your score after nine holes but make sure to do the correct math when changing the course rating.</p>
+          </div>
+          <div class="under-content"> 
+            <h4 class="under-header">Averaging your Handicap</h4>
+            <p class="under-text">Your handicap is something that stays with you and should always be averaged. If you play 3 rounds and want to calculate your handicap over those 3 rounds you can take the handicap for each round and at those numbers together. After you get the sum of the numbers added together, divide them by the number of rounds you played and that is your average handicap</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<input type="text" placeholder="Course Rating" class="calculator-inputs" id="course-rating" required>
-<input type="text" placeholder="Slope Rating" class="calculator-inputs" id="slope-rating" required>
-<input type="text" placeholder="Par" class="calculator-inputs" id="par" required>
-<button type="submit" class=" btn btn-danger calculator-btn">Calculate</button>
-</form>
-<div class="answer-card">
-
- 
-</div>
-
-</div>
-</div>
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="/calculatorJs"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</body>
+  </body>
 </html>
