@@ -1,6 +1,6 @@
 const path = require('path');
 const GOLFCOURSES = require('../config/db.json')
-let base_id = 11
+let base_id = 10
 
 module.exports = {
     getHomePage: (req,res) => {
