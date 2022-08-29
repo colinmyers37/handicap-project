@@ -1,4 +1,6 @@
 const path = require('path');
+const GOLFCOURSES = require('../config/db.json')
+let base_id = 11
 
 module.exports = {
     getHomePage: (req,res) => {
@@ -35,5 +37,8 @@ module.exports = {
         handicap += '';
         console.log(handicap);
         res.status(200).send(handicap);
+    },
+    getAll: (req, res) => {
+        res.status(200).send(GOLFCOURSES)
     },
 }
