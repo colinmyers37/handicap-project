@@ -95,6 +95,18 @@ body {
 .returned-text {
   color: black;
 }
+.returned-card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.refresh-pic{
+  height: 40px;
+  width: auto;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
 .under-calculator {
   display: flex;
   flex-direction: row;

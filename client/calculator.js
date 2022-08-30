@@ -20,13 +20,18 @@ form.addEventListener("submit", function (event) {
     console.log(err)
   });
 });
+function clearCalc() {
+  console.log("this shit working")
+  const elements = document.querySelector('.returned-card')
+  elements.remove();
+}
 
 function createCard(handicap) {
   const card = document.createElement('div');
   //console.log(handicap);
   card.classList.add('returned-card');
 
-  card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4>`
+  card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4><a onclick='clearCalc()' href='#'><img src='./images/refresh.png' alt='refresh' class='refresh-pic'></img></a>`;
 let handicapOutput = document.querySelectorAll('.returned-card')
 if (handicapOutput.length < 1) {
   answerCard.appendChild(card);
