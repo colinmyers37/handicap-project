@@ -31,7 +31,7 @@ function createCard(handicap) {
   //console.log(handicap);
   card.classList.add('returned-card');
 
-  card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4><a onclick='clearCalc()' href='#'><img src='./images/refresh.png' alt='refresh' class='refresh-pic'></img></a>`;
+  card.innerHTML = `<h4 class='returned-text'>Your handicap after this round is ${handicap} </h4><a class='clickable-refresh' onclick='clearCalc()' ><img src='./images/refresh.png' alt='refresh' class='refresh-pic'></img></a>`;
 let handicapOutput = document.querySelectorAll('.returned-card')
 if (handicapOutput.length < 1) {
   answerCard.appendChild(card);
