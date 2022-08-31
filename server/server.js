@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const colors = require('colors');
 require('dotenv').config();
-const Sequelize = require('sequelize');
+
 
 
 
