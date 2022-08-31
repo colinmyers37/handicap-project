@@ -21,9 +21,15 @@ form.addEventListener("submit", function (event) {
   });
 });
 function clearCalc() {
-  console.log("this shit working")
+let clearCourse = document.querySelector("#course-rating");
+let clearSlope = document.querySelector("#slope-rating");
+let clearPar = document.querySelector("#par");
+
   const elements = document.querySelector('.returned-card')
   elements.remove();
+  clearCourse.value = '';
+  clearSlope.value = '';
+  clearPar.value = '';
 }
 
 function createCard(handicap) {
