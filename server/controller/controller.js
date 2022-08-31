@@ -39,6 +39,7 @@ module.exports = {
         res.status(200).send(handicap);
     },
     getAll: (req, res) => {
+        console.log(GOLFCOURSES)
         res.status(200).send(GOLFCOURSES)
     },
     createGolfcourse: (req, res) => {
