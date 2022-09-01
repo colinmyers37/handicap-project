@@ -137,3 +137,30 @@ body {
 .clickable-refresh:hover {
   cursor: pointer;
 }
+
+@media (max-width: 820px) { 
+  .website-name{
+    font-size: 1.1rem;
+  }
+.under-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator-box {
+  height: 500px;
+
+}
+.calculator-form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.homepage-title {
+  font-size: 1.5rem;
+}
+#average-handicap {
+  margin-top: 600px;
+}
+}
