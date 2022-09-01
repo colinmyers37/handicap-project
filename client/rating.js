@@ -3,7 +3,7 @@
 const golfcoursesContainer = document.querySelector('#golfcourses-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:4000/api/golfcourses`
+const baseURL = `/api/golfcourses`
 
 const golfcoursesCallback = ({ data: golfcourses }) =>  {
     document.querySelector('#title').value = '';
